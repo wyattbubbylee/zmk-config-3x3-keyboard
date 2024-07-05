@@ -8,54 +8,63 @@
         lgui1_1: lgui1_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI1_1";
+            #binding-cells = <0>;
             bindings = <&kp LG(N1)>, <&to 1>;
         };
 
         lgui2_2: lgui2_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI2_2";
+            #binding-cells = <0>;
             bindings = <&kp LG(N2)>, <&to 2>;
         };
 
         lgui3_3: lgui3_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI3_3";
+            #binding-cells = <0>;
             bindings = <&kp LG(N3)>, <&to 3>;
         };
 
         lgui4_4: lgui4_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI4_4";
+            #binding-cells = <0>;
             bindings = <&kp LG(N4)>, <&to 4>;
         };
 
         lgui5_5: lgui5_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI5_5";
+            #binding-cells = <0>;
             bindings = <&kp LG(N5)>, <&to 5>, <&kp K_PLAY_PAUSE>;
         };
 
         lgui6_6: lgui6_6 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI6_6";
+            #binding-cells = <0>;
             bindings = <&kp LG(N6)>, <&to 6>;
         };
 
         lgui7_7: lgui7_7 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI7_7";
+            #binding-cells = <0>;
             bindings = <&kp LG(N7)>, <&to 7>;
         };
 
         lgui8_8: lgui8_8 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI8_8";
+            #binding-cells = <0>;
             bindings = <&kp LG(N8)>, <&to 8>;
         };
 
         lgui9_9: lgui9_9 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI9_9";
+            #binding-cells = <0>;
             bindings = <&kp LG(N9)>, <&to 9>;
         };
 
