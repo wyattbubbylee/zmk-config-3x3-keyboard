@@ -50,5 +50,45 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
             >;
         };
+
+        minecraft_1 {
+            bindings = <
+&kp Q      &kp W      &kp E
+&kp A      &kp S      &kp D
+&kp LSHFT  &kp LCTRL  &kp SPACE
+            >;
+        };
+
+        minecraft_2 {
+            bindings = <
+&kp Q       &trans  &trans
+&kp ESCAPE  &kp F   &kp LS(TILDE)
+&to 0       &trans  &trans
+            >;
+        };
+
+        arrows {
+            bindings = <
+&kp PG_DN  &kp UP   &kp PG_UP
+&kp LEFT   &kp UP   &kp RIGHT
+&kp HOME   &kp ESC  &kp END
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans
+&trans  &trans  &trans
+&trans  &trans  &trans
+            >;
+        };
+
+        numpad {
+            bindings = <
+&kp N7  &kp N8  &kp N9
+&kp N4  &kp N5  &kp N6
+&kp N1  &kp N2  &kp N3
+            >;
+        };
     };
 };
