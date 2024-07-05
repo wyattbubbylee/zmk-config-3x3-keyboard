@@ -4,11 +4,58 @@
 
 / {
     behaviors {
+        lgui1_1: lgui1_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI1_1";
+            bindings = <&kp N1>, <&kp LG(N1)>;
+        };
+
+        lgui2_2: lgui2_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI2_2";
+            bindings = <&kp N2>, <&kp LG(N2)>;
+        };
+
+        lgui3_3: lgui3_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI3_3";
+            bindings = <&kp N3>, <&kp LG(N3)>;
+        };
+
+        lgui4_4: lgui4_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI4_4";
+            bindings = <&kp N4>, <&kp LG(N4)>;
+        };
+
+        lgui5_5: lgui5_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI5_5";
+            bindings = <&kp N5>, <&kp LG(N5)>;
+        };
+
+        lgui6_6: lgui6_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI6_6";
+            bindings = <&kp N6>, <&kp LG(N6)>;
+        };
+
         lgui7_7: lgui7_7 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI7_7";
-            #binding-cells = <0>;
             bindings = <&kp N7>, <&kp LG(N7)>;
+        };
+
+        lgui8_8: lgui8_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI8_8";
+            bindings = <&kp N8>, <&kp LG(N8)>;
+        };
+
+        lgui9_9: lgui9_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LGUI9_9";
+            bindings = <&kp N9>, <&kp LG(N9)>;
         };
 
         lgui3_media: lgui3_media {
@@ -25,15 +72,17 @@
         compatible = "zmk,keymap";
         label = "ninepad";
 
+# layer 0
         default_layer {
             label = "Default";
             bindings = <
-&lgui7_7      &kp N8        &mo 2
-&kp NUMBER_4  &kp N5        &kp NUMBER_6
-&kp NUMBER_1  &kp NUMBER_2  &lgui3_media
+&lgui7_7      &lgui8_8      &lgui9_9
+&lgui4_4      &lgui5_5      &lgui6_6
+&lgui1_1      &lgui2_2      &lgui3_3
             >;
         };
 
+# layer 1
         media {
             bindings = <
 &kp K_PREVIOUS    &kp K_VOL_UP  &kp RS(K_NEXT)
@@ -42,6 +91,7 @@
             >;
         };
 
+# layer 2
         bt_layer {
             label = "bt";
             bindings = <
@@ -51,6 +101,7 @@
             >;
         };
 
+# layer 3
         minecraft_1 {
             bindings = <
 &kp Q      &kp W      &kp E
@@ -59,6 +110,7 @@
             >;
         };
 
+# layer 4
         minecraft_2 {
             bindings = <
 &kp Q       &trans  &trans
@@ -67,6 +119,7 @@
             >;
         };
 
+# layer 5
         arrows {
             bindings = <
 &kp PG_DN  &kp UP   &kp PG_UP
@@ -75,6 +128,7 @@
             >;
         };
 
+# layer 6
         mouse {
             bindings = <
 &trans  &trans  &trans
@@ -83,6 +137,7 @@
             >;
         };
 
+# layer 7
         numpad {
             bindings = <
 &kp N7  &kp N8  &kp N9
