@@ -125,9 +125,9 @@
 
         mouse {
             bindings = <
-&lt 7 A         &mmv MOVE_UP    &trans
-&mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&mkp MB1        &mkp MB3        &mkp MB2
+&lt 7 A         &trans    &trans
+&trans  &trans  &trans
+&trans        &trans        &trans
             >;
         };
 
