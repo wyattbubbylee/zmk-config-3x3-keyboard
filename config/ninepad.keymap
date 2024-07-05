@@ -7,55 +7,55 @@
         lgui1_1: lgui1_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI1_1";
-            bindings = <&kp N1>, <&kp LG(N1)>;
+            bindings = <&kp LG(N1)>, <&to 1> ;
         };
 
         lgui2_2: lgui2_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI2_2";
-            bindings = <&kp N2>, <&kp LG(N2)>;
+            bindings = <&kp LG(N2)>, <&to 2> ;
         };
 
         lgui3_3: lgui3_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI3_3";
-            bindings = <&kp N3>, <&kp LG(N3)>;
+            bindings = <&kp LG(N3)>, <&to 3> ;
         };
 
         lgui4_4: lgui4_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI4_4";
-            bindings = <&kp N4>, <&kp LG(N4)>;
+            bindings = <&kp LG(N4)>, <&to 4> ;
         };
 
         lgui5_5: lgui5_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI5_5";
-            bindings = <&kp N5>, <&kp LG(N5)>;
+            bindings = <&kp LG(N5)>, <&to 5>, <&kp K_PLAY_PAUSE>;
         };
 
         lgui6_6: lgui6_6 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI6_6";
-            bindings = <&kp N6>, <&kp LG(N6)>;
+            bindings = <&kp LG(N6)>, <&to 6>;
         };
 
         lgui7_7: lgui7_7 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI7_7";
-            bindings = <&kp N7>, <&kp LG(N7)>;
+            bindings = <&kp LG(N7)>, <&to 7>;
         };
 
         lgui8_8: lgui8_8 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI8_8";
-            bindings = <&kp N8>, <&kp LG(N8)>;
+            bindings = <&kp LG(N8)>, <&to 8>;
         };
 
         lgui9_9: lgui9_9 {
             compatible = "zmk,behavior-tap-dance";
             label = "LGUI9_9";
-            bindings = <&kp N9>, <&kp LG(N9)>;
+            bindings = <&kp LG(N9)>, <&to 9>;
         };
 
         lgui3_media: lgui3_media {
@@ -138,6 +138,15 @@
         };
 
 # layer 7
+        reset {
+            bindings = <
+&trans  &trans  &to 0
+&trans  &trans  &trans
+&trans  &trans  &bootloader
+            >;
+        };
+
+# layer 8
         numpad {
             bindings = <
 &kp N7  &kp N8  &kp N9
