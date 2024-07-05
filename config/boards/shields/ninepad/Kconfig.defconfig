@@ -6,4 +6,8 @@ config ZMK_KEYBOARD_NAME
 config USB_DEVICE_MANUFACTURER
     default "Waylon Walker"
 
+config ZMK_MOUSE
+    default y
+
+
 endif
