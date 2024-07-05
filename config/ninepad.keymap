@@ -73,8 +73,6 @@
         compatible = "zmk,keymap";
         label = "ninepad";
 
-        # layer 0
-
         default_layer {
             label = "Default";
             bindings = <
@@ -84,8 +82,6 @@
             >;
         };
 
-        # layer 1
-
         media {
             bindings = <
 &lt 7 K_PREVIOUS  &kp K_VOL_UP  &kp RS(K_NEXT)
@@ -93,8 +89,6 @@
 &to 0             &trans        &trans
             >;
         };
-
-        # layer 2
 
         bt_layer {
             label = "bt";
@@ -105,8 +99,6 @@
             >;
         };
 
-        # layer 3
-
         minecraft_1 {
             bindings = <
 &lt 7 Q    &kp W      &kp E
@@ -114,8 +106,6 @@
 &kp LSHFT  &kp LCTRL  &kp SPACE
             >;
         };
-
-        # layer 4
 
         minecraft_2 {
             bindings = <
@@ -125,8 +115,6 @@
             >;
         };
 
-        # layer 5
-
         arrows {
             bindings = <
 &lt 7 PAGE_DOWN  &kp UP   &kp PG_UP
@@ -134,8 +122,6 @@
 &kp HOME         &kp ESC  &kp END
             >;
         };
-
-        # layer 6
 
         mouse {
             bindings = <
@@ -145,8 +131,6 @@
             >;
         };
 
-        # layer 7
-
         reset {
             bindings = <
 &trans  &trans  &to 0
@@ -154,8 +138,6 @@
 &to 1   &to 2   &bootloader
             >;
         };
-
-        # layer 8
 
         numpad {
             bindings = <
