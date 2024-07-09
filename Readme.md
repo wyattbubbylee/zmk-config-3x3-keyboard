@@ -15,9 +15,9 @@ This is my zmk config for my handwired ninepad macropad
 
 
 
-<img alt="ninepad-assembled" src="https://github.com/WaylonWalker/zmk-config-ninepad/assets/22648375/1b9f3e36-a67f-4df2-be81-cfdf64c11aa5" width="450"> 
+<img alt="ninepad-assembled" src="https://github.com/WaylonWalker/zmk-config-ninepad/assets/22648375/1b9f3e36-a67f-4df2-be81-cfdf64c11aa5" width="400"> 
 
-<img alt="ninepad-plate-switched" src="https://github.com/WaylonWalker/zmk-config-ninepad/assets/22648375/067a16ae-0a70-47f3-8edc-3711ca4944b4" width="450"> 
+<img alt="ninepad-plate-switched" src="https://github.com/WaylonWalker/zmk-config-ninepad/assets/22648375/067a16ae-0a70-47f3-8edc-3711ca4944b4" width="400"> 
 
 > (Left) fully assembled ninepad
 > (Right) plate with switches inserted ready for wiring
