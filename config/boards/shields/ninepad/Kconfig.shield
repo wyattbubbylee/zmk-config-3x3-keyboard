@@ -1,2 +1,2 @@
 config SHIELD_NINEPAD
-    def_bool $(shields_list_contains, ninepad)
+    def_bool $(shields_list_contains,ninepad)
