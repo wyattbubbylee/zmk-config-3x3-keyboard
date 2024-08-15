@@ -1,11 +1,50 @@
-@@ -17,10 +17,10 @@
-#     artifact-name: corne_left_with_logging
-#
-include:
-    board: adafruit_kb2040
-    shield: ninepad
-  - board: sparkfun_pro_micro_rp2040
-    shield: ninepad
-  - board: nice_nano
-    shield: ninepad
-  - board: nice_nano_v2
+# .github/workflows/build.yaml
+
+name: Build and Flash RP2040 Keyboard
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build Firmware
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up ARM toolchain
+        uses: arm-actions/setup-arm-toolchain@v1
+        with:
+          toolchain: gcc
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y cmake libusb-dev
+
+      - name: Configure CMake
+        run: |
+          cmake -B build -S .
+
+      - name: Build Firmware
+        run: |
+          cmake --build build
+
+      - name: Upload firmware
+        uses: actions/upload-artifact@v3
+        with:
+          name: firmware
+          path: build/firmware.uf2
+
+      - name: Flash firmware (if applicable)
+        run: |
+          # Example script to flash the firmware, this needs to be adjusted
+          # according to your flashing setup. Replace `flash_tool` and `flash_command` as needed.
+          flash_tool --port=/dev/ttyACM0 --flash-command "build/firmware.uf2"
