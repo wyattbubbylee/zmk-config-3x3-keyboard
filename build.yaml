@@ -1,5 +1,3 @@
-# .github/workflows/build.yaml
-
 name: Build and Flash RP2040 Keyboard
 
 on:
@@ -14,7 +12,7 @@ jobs:
   build:
     name: Build Firmware
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -43,8 +41,8 @@ jobs:
           name: firmware
           path: build/firmware.uf2
 
-      - name: Flash firmware (if applicable)
+      - name: Flash firmware
         run: |
-          # Example script to flash the firmware, this needs to be adjusted
-          # according to your flashing setup. Replace `flash_tool` and `flash_command` as needed.
-          flash_tool --port=/dev/ttyACM0 --flash-command "build/firmware.uf2"
+          # Example script; adjust for your setup
+          # This step may not be necessary if you flash manually
+          echo "Firmware built and ready for flashing manually or via another process"
