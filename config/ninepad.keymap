@@ -82,9 +82,9 @@
 
         code-1 {
             bindings = <
-&lt 1 F  &kp C  &kp
-&kp      &kp    &kp
-&kp      &kp    &kp
+&lt 1 F  &kp C   &trans
+&trans   &trans  &trans
+&trans   &trans  &trans
             >;
         };
 
