@@ -1,47 +1,8 @@
-name: Build and Flash RP2040 Keyboard
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
 jobs:
   build:
-    name: Build Firmware
+    strategy:
+      matrix:
+        build: [ "RP2040" ] # Adjust as needed
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up ARM toolchain
-        uses: arm-actions/setup-arm-toolchain@v1
-        with:
-          toolchain: gcc
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake libusb-dev
-
-      - name: Configure CMake
-        run: |
-          cmake -B build -S .
-
-      - name: Build Firmware
-        run: |
-          cmake --build build
-
-      - name: Upload firmware
-        uses: actions/upload-artifact@v3
-        with:
-          name: firmware
-          path: build/firmware.uf2
-
-      - name: Flash firmware
-        run: |
-          # Placeholder for flashing script
-          echo "Firmware built and ready for flashing manually or via another process"
+      # Your steps here
