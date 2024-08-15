@@ -43,6 +43,5 @@ jobs:
 
       - name: Flash firmware
         run: |
-          # Example script; adjust for your setup
-          # This step may not be necessary if you flash manually
+          # Placeholder for flashing script
           echo "Firmware built and ready for flashing manually or via another process"
