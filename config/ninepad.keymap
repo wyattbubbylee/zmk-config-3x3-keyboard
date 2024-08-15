@@ -92,7 +92,7 @@
             bindings = <
 &kp R   &kp I   &kp N
 &kp T   &trans  &trans
-&trans  &trans  &trans
+&trans  &trans  &bootloader
             >;
         };
     };
