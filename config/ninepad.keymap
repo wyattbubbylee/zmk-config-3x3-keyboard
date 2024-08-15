@@ -82,17 +82,17 @@
 
         code-1 {
             bindings = <
-&lt 1 F  &kp C   &trans
-&trans   &trans  &trans
-&trans   &trans  &trans
+&trans     &kp BSPC  &lt 1 P
+&kp SPACE  &kp UP    &kp TAB
+&kp LEFT   &kp DOWN  &kp RIGHT
             >;
         };
 
-        layer_1 {
+        print {
             bindings = <
+&kp I   &kp N   &kp T
 &trans  &trans  &trans
-&kp A   &kp B   &kp C
-&trans  &kp E   &trans
+&trans  &trans  &trans
             >;
         };
     };
