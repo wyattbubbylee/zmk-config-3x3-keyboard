@@ -90,9 +90,9 @@
 
         print {
             bindings = <
-&kp R   &kp I   &kp N
-&kp T   &trans  &trans
-&trans  &trans  &bootloader
+&kp R                  &kp I     &kp N
+&kp T                  &kp LPAR  &kp DOUBLE_QUOTES
+&kp RIGHT_PARENTHESIS  &trans    &bootloader
             >;
         };
     };
